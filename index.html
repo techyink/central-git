@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Registration form</title>
+<h1 align=center><u><marquee>REGISTRATION FORM</marquee></u></h1>
+</head>
+<body bgcolor=red>
+<script>
+function change_color(color){
+document.body.style.background =color;
+
+function myFunction(element, color) {
+  element.style.color = color;
+}
+
+</script>
+<button onclick="getElementById('name').innerHTML = Date()">What is the time?</button>
+
+<h3 onclick="myFunction(this, 'red')">Click me to change my color.</h3>
+
+
+<form>
+<table border=0 width=2 align=center>
+<center><input type="button" value="change color" onclick="change_color(white);"></center>
+
+<tr>
+    <td id =name>Name:</td>
+    <td><input type= "text" placeholder="Name" name =""> </td>   
+
+</tr>
+
+<tr>
+     <td>Password:</td>
+     <td><input type = "text" placeholder= "Password" name=""></td>    
+
+</tr>
+
+<tr>
+
+      <td>Email:</td>
+      <td><input type ="email" placeholder="Email"></td>
+</tr>
+
+<tr>
+      <td>Phone no:</td>
+      <td> <select> 
+               <option>011</option>
+               <option>012</option>
+               <option>013</option>
+               <option>014</option>       
+           </select>
+      </td>  
+      <td><input type="phone" placeholder ="9917******"></td> 
+</tr>
+<tr>
+<td><input type="submit" value="submit" onclick="change_color(green)"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
